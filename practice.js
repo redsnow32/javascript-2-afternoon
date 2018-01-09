@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me ={
+  name:"Brandon Allred",
+  age:29
+}
+alert(me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: "Linkin Park",
+  food: "Mexican",
+  person: "Ashley",
+  book: "Bodybuilding encyclopedia",
+  movie: "Dumb and Dumber",
+  holiday: "Christmas"
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "WRX";
+favoriteThings.brand = "Vans";
 
 
 /*
@@ -43,7 +55,8 @@
 
 //Code here
 
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 ////////// PROBLEM 3 //////////
 
@@ -56,6 +69,12 @@
 */
 
 //Code here
+var backPack = {};
+
+var item = "firstPocket";
+
+backPack[item] = "chapstick" ;
+backPack.color = "Black";
 
 
 
@@ -65,7 +84,7 @@
 
 //Code here
 
-
+// alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +93,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,8 +116,8 @@ var user2 = {
 */
 
 //Code Here
-
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
 
@@ -109,7 +128,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -119,14 +138,20 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello = function () {
+  alert("hello");
+}
+methodCollection.logHello = function () {
+  console.log("hello")
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +162,15 @@ var user2 = {
 */
 
 //Code Here
+function makePerson (name, birthday, ssn) {
+  var person = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
 
+  }
+  return person;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +181,14 @@ var user2 = {
 */
 
 //Code Here
+function makeCard (cardNumber, expirationDate, securityCode) {
+  var card = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return card;
+}
 
+makeCard(123123123,2017, 209)
 
